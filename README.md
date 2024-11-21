@@ -1,12 +1,6 @@
 # README - COSI 121b Lunar Lander PS
 
-The code provided in this repository contains the solutions to the Lunar Lander Problem Set for COSI 121b - Structure and Interpretations of Computer Programs. 
-
-```
-The 5 different problems will be described below, as well as the instructions for how to install and run the code. Each problem is solved within its own Java file/class. 
-
-Note: This assignment was done for a class, and we were limited to using only Java features we had covered in class thus far. This may make the assignment solutions more complicated/longer than they would have to be. 
-```
+The code provided in this repository contains the solutions to the Lunar Lander Problem Set for COSI 121b - Structure and Interpretations of Computer Programs. A general description of the assignment and its relevant problems will be provided below. 
 
 ## Installation and Execution 
 
@@ -62,7 +56,7 @@ Modify Louis' ``` play ``` and ``` lander-loop ``` procedures so that ``` play `
 
 Alyssa likes this new idea much better, and comes up with a twist of her own by suggesting that one can create new strategies by combining old ones. For example, we could make a new strategy by, at each instant, choosing between two given strategies. If the two strategies were, say, ``` full-burn ``` and ``` no-burn ```, we could express this new strategy as 
 
-``` (lambda (shi[-state]) (if (= (random 2) 0) (full-burn ship-state) (no-burn ship-state))) ``` 
+``` (lambda (ship-state) (if (= (random 2) 0) (full-burn ship-state) (no-burn ship-state))) ``` 
 
 The Scheme procedure ``` random ``` is used to return either 0 or 1 with equal code. Testing whether the result is zero determines whether to apply ``` full-burn ``` or ``` no-burn ```. 
 
@@ -110,7 +104,7 @@ One minor problem with Eva's strategy is that it only works if the ship is movin
 
 ``` (play (height-choice no-burn constant-acc 40)) ``` 
 
-gives good results. Continuing to experiment, they observe a curious phenomenon: the longer they allow the ship to fakk before turning on the rockets, the less fuel is consumed during the landing. 
+gives good results. Continuing to experiment, they observe a curious phenomenon: the longer they allow the ship to fall before turning on the rockets, the less fuel is consumed during the landing. 
 
 ### Problem 9 
 
@@ -124,4 +118,4 @@ A realistic modification to the "wait until the very end" strategy is to let the
 
 ### Problem 11 
 
-Implement the strategu described above as a procedure called ``` optimal-constant-acc ```. 
+Implement the strategy described above as a procedure called ``` optimal-constant-acc ```. 
