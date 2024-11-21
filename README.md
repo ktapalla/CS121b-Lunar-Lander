@@ -6,7 +6,9 @@ The code provided in this repository contains the solutions to the Lunar Lander 
 
 Get the files from GitHub and in your terminal/console move into the folder of the project. Run the following line to open the program in DrRacket: 
 
-``` drracket Lunar_Lander.rtk ```
+``` bash 
+drracket Lunar_Lander.rtk 
+```
 
 This will open up your DrRacket application where you will be able to play the game. Click the button labeled "Run" at the top right of the DrRacket Application window. The user will then be able to play the game within DrRacket themselves by typing the appropriate commands on the REPL.
 
